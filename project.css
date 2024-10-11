@@ -1,0 +1,128 @@
+/* Até o .menu ul li a:hover será a estilização apenas do Menu de Navegação*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0c192c;
+    color: white;
+}
+
+.menu {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.menu .menu-faketrigger {
+    position: absolute;
+    z-index: 1000;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu .menu-faketrigger:checked ~ ul {
+    background-color: white;
+
+}
+
+.menu .menu-lines {
+    position: absolute;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+}
+
+.menu .menu-lines span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all ease .2s;
+}
+
+.menu .menu-faketrigger:checked~ .menu-lines span {
+    background-color: #0c192c;
+}
+
+.menu .menu-faketrigger:checked ~.menu-lines span:nth-child(1) {
+    transform-origin: 0% 0%;
+    transform: rotate(45deg) scale(1.25);
+}
+
+.menu .menu-faketrigger:checked ~.menu-lines span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu .menu-faketrigger:checked ~.menu-lines span:nth-child(3) {
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg) scale(1.25);
+}
+
+.menu ul {
+    position: absolute;
+    z-index: 998;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: calc(100vh - 100px);
+    padding-top: 100px;
+    background-color: white;
+    margin-left: -300px;
+    transition: all ease .2s;
+}
+
+.menu .menu-faketrigger:checked ~ ul {
+    margin-left: 0;
+}
+
+.menu ul li {
+    padding: 10px 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    transition: all ease .3;
+}
+
+.menu ul li a:hover {
+    color: #999;
+}/*fim da estilização do menu de navegação*/
+
+/* abaixo segue a estilização das imagens e texto dos projetos */
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+p{
+    margin-top: 20px;
+    margin-left: 400px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+#dov{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.calc{
+    margin-top: 90px;
+}
+
+.lamp{
+    margin-top: 90px;
+}
+

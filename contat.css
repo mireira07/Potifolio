@@ -1,0 +1,108 @@
+/*Até form button:hover será apenas a estilização do contat.html */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(0, #120c56, #000000);
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background-color: #1d1d2e;
+    width: 500px;
+}
+section h2{
+    color: white;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 4px;   
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form textarea{
+     height: 150px;
+}
+form button{
+     padding: 15px;
+     cursor: pointer;
+     font-size: 16px;
+     background: transparent;
+     border: 2px solid white;
+     color: white;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background: white;
+    color: black;
+    border-radius: 16px;
+}/*fim da estilização da página contato*/
+
+/* Abaixo será a estilização do "obrigado.html" */
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #0c192c;
+    flex-direction: column;
+}
+.text{
+    font-size: 45px;
+    color: white;
+    margin-bottom: 30px;
+}
+.paragrafo{
+    color: white;
+    margin-bottom: 50px;
+}
+.btn{
+    padding: 15px 55px;
+    background: white;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+.btn:hover{
+    border-radius: 16px;
+}
